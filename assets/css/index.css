@@ -1,0 +1,76 @@
+/* top section */
+.bg-top {
+    width: 100%;
+    height: 245px;
+    background-color: #fc8410;
+    background-image: url("../public/leaf-header-1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
+
+.top-register-button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+}
+
+.left-button {
+    border: 2px solid #fff;
+    padding: 10px;
+    margin-right: 15px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.right-button {
+    border: 2px solid #fff;
+    padding: 10px;
+    color: black;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.top-shop {
+    display: flex;
+    align-items: center;
+}
+
+.top-shop-icons {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.top-shop-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.form-control {
+    background-color: #fc8410;
+}
+
+
+.top-shop-search input {
+    background-color: #fc8410;
+}
+
+.top-shop-search i {
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 20px);
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #fff;
+   
+}
+
+/* top section */
+
