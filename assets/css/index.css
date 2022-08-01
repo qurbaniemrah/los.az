@@ -162,28 +162,102 @@
     color: #fff;
 }
 
-.top-categories-list {
+.top-categories-body {
     width: 100%;
     position: absolute;
-    background-color: red;
-    color: black;
-    z-index: 3;
-    top: 63px;
+    top: 64px;
     text-align: center;
+}
+
+.top-categories-body a {
+    color: gray;
+}
+
+.ofis-levazimati-sub {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 255px;
+    opacity: 0;
+
+}
+
+.qida-sub {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 255px;
     opacity: 0;
 }
 
-.categories-list-submenu {
+.teserrufat-sub {
     width: 100%;
-    position: relative;
+    position: absolute;
     top: 0;
+    left: 255px;
+    opacity: 0;
+}
 
-    z-index: 3;
-    color: black;
+.elektron-sub {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 255px;
+    opacity: 0;
+}
+
+.dibcek-sub {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 255px;
+    opacity: 0;
+}
+
+.hediyye-sub {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 255px;
+    opacity: 0;
+}
+
+.coffee-sub {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 255px;
+    opacity: 0;
+}
+
+.ofis-levazimati:hover .ofis-levazimati-sub {
+    opacity: 1;
 }
 
 
 
+.qida:hover .qida-sub {
+    opacity: 1;
+}
 
+.tesserrufat:hover .teserrufat-sub {
+    opacity: 1;
+}
+
+.elektron:hover .elektron-sub {
+    opacity: 1;
+}
+
+.dibcek:hover .dibcek-sub {
+    opacity: 1;
+}
+
+.hediyye:hover .hediyye-sub {
+    opacity: 1;
+}
+
+.coffee:hover .coffee-sub {
+    opacity: 1;
+}
 
 /* top section */
