@@ -1,12 +1,11 @@
 /* top section */
 .bg-top {
     width: 100%;
-    height: auto;
+    /* height: auto; */
     background-color: #fc8410;
     background-image: url("../public/leaf-header-1.png");
     background-repeat: no-repeat;
     background-position: right;
-
 }
 
 .top-register-button {
@@ -58,7 +57,6 @@
 
 .top-shop-search {
     position: relative;
-
 }
 
 .top-shop-search input {
@@ -77,7 +75,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
 }
 
 .top-categories-select {
@@ -98,11 +95,22 @@
 }
 
 .top-categories-nav {
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
-    font-size: 20px;
-
+    justify-content: center;
+  
 }
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+}
+
+.nav-link .dropdown-toggle {
+    position: absolute;
+}
+
+
+
 
 .top-categories-nav a {
     color: #fff;
@@ -162,11 +170,32 @@
     color: #fff;
 }
 
+.top-categories-select:hover .top-categories-body {
+    display: block;
+    justify-content: center;
+    display: flex;
+
+}
+
 .top-categories-body {
     width: 100%;
     position: absolute;
     top: 64px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.top-categories-list li {
+    padding: 10px 0px;
+    border-bottom: 1px solid gray;
+}
+
+.top-categories-body img {
+    object-fit: cover;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
 }
 
 .top-categories-body a {
@@ -177,16 +206,15 @@
     width: 100%;
     position: absolute;
     top: 0;
-    left: 255px;
+    left: 100%;
     opacity: 0;
-
 }
 
 .qida-sub {
     width: 100%;
     position: absolute;
     top: 0;
-    left: 255px;
+    left: 100%;
     opacity: 0;
 }
 
@@ -194,7 +222,7 @@
     width: 100%;
     position: absolute;
     top: 0;
-    left: 255px;
+    left: 100%;
     opacity: 0;
 }
 
@@ -202,7 +230,7 @@
     width: 100%;
     position: absolute;
     top: 0;
-    left: 255px;
+    left: 100%;
     opacity: 0;
 }
 
@@ -210,7 +238,7 @@
     width: 100%;
     position: absolute;
     top: 0;
-    left: 255px;
+    left: 100%;
     opacity: 0;
 }
 
@@ -218,7 +246,7 @@
     width: 100%;
     position: absolute;
     top: 0;
-    left: 255px;
+    left: 100%;
     opacity: 0;
 }
 
@@ -226,7 +254,7 @@
     width: 100%;
     position: absolute;
     top: 0;
-    left: 255px;
+    left: 100%;
     opacity: 0;
 }
 
@@ -240,7 +268,7 @@
     opacity: 1;
 }
 
-.tesserrufat:hover .teserrufat-sub {
+.teserrufat:hover .teserrufat-sub {
     opacity: 1;
 }
 
