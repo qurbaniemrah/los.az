@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -53,46 +54,48 @@
             <div class="header-md-search">
               <form id="header-search-form" action="https://los.az/az/search" method="get">
                 <div class="search-box">
-                    <input type="text" class="form-control" name="search" id="header-search" placeholder="Axtar">
-                    <span class="search-icon" onclick="$('#header-search-form').submit()" style="cursor: pointer"><i class="fa fa-search" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="search" id="header-search" placeholder="Axtar">
+                  <span class="search-icon" onclick="$('#header-search-form').submit()" style="cursor: pointer"><i
+                      class="fa fa-search" aria-hidden="true"></i></span>
                 </div>
-            </form>
+              </form>
             </div>
           </div>
           <div class="col-lg-2 col-md-2">
             <div class="header-md-social">
               <ul class="header-info">
                 <li class="shopping-cart">
-                    <a class="my-cart-icon" href="https://los.az/az/sebet"><img src="https://los.az/lucky/images/general/cart.svg" alt="shopping cart"></a>
-                    <span class="basket-count sum qtyCount">0</span>
+                  <a class="my-cart-icon" href="https://los.az/az/sebet"><img
+                      src="https://los.az/lucky/images/general/cart.svg" alt="shopping cart"></a>
+                  <span class="basket-count sum qtyCount">0</span>
                 </li>
                 <li class="whish-list">
-                    <a class="my-cart-icon" href="https://los.az/az/istek-siyahisi">
-                        <img src="https://los.az/lucky/images/general/heart.svg" alt="wish-list">
-                    </a>
-                    <span class="basket-count sum wishCount">0</span>
+                  <a class="my-cart-icon" href="https://los.az/az/istek-siyahisi">
+                    <img src="https://los.az/lucky/images/general/heart.svg" alt="wish-list">
+                  </a>
+                  <span class="basket-count sum wishCount">0</span>
                 </li>
-            </ul>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- header mobile -->
-    
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4 d-none d-sm-block d-md-none d-lg-none">
-            <div class="header-md-logo">
-              <a href="">
-                <img src="./assets/public/images/logo/logo-header.svg" alt="logo">
-              </a>
-            </div>
-          </div>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 d-none d-sm-block d-md-none d-lg-none">
+          <div class="header-md-logo">
+            <a href="">
+              <img src="./assets/public/images/logo/logo-header.svg" alt="logo">
+            </a>
+          </div>
         </div>
+
       </div>
-    
+    </div>
+
     <!-- header mobile -->
     <!-- mobile version -->
 
@@ -451,15 +454,149 @@
     </div>
     <!-- header bottom -->
   </header>
-
-
-
-
   <!-- header -->
+
+  <!-- section swiper -->
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./assets/public/1657702554banner qida.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/public/1654584094banner cofe.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/public/1654582844banner11.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./assets/public/1654580505slider3.jpg" alt="">
+      </div>
+
+    </div>
+    <div style="color: #fff;" class="swiper-button-next"></div>
+    <div style="color: #fff;" class="swiper-button-prev"></div>
+
+  </div>
+  <!-- section swiper -->
+
+  <!-- section office tool -->
+  <section id="office-tool">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <div class="section-heading">
+            <h1>Ofis ləvazimatları</h1>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="office-tool-item">
+            <div class="office-tool-heading">
+              <div class="cat-label cat-label-offer">
+                Tövsiyə edilir
+              </div>
+              <div class="wish-label">
+                <a href="">
+                  <img src="https://los.az/lucky/images/icon/heart-outline.svg" alt="" aria-label="add-to-wishlist">
+                </a>
+              </div>
+            </div>
+            <div class="office-tool-body">
+              <a href="">
+                <img src="./assets/public/1636102439dwGqfsr0N4IbHr9RYvefNoUJB5mWNiAQdKCE1aPo.png" alt="">
+              </a>
+
+            </div>
+            <div class="office-tool-footer">
+              <p>Qələm "Gigis" 9684</p>
+              <p class="tool-price">0.40 Azn</p>
+              <a class = "office-tool-btn">Səbətə at</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="office-tool-item">
+            <div class="office-tool-heading">
+              <div class="cat-label cat-label-offer">
+                Tövsiyə edilir
+              </div>
+              <div class="wish-label">
+                <a href="">
+                  <img src="https://los.az/lucky/images/icon/heart-outline.svg" alt="" aria-label="add-to-wishlist">
+                </a>
+              </div>
+            </div>
+            <div class="office-tool-body">
+              <a href="">
+<img src="./assets/public/1628068596540540504504540540504.jpg" alt="">
+              </a>
+
+            </div>
+            <div class="office-tool-footer">
+              <p>Qələm "Gigis" 9684</p>
+              <p class="tool-price">0.40 Azn</p>
+              <a class = "office-tool-btn">Səbətə at</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="office-tool-item">
+            <div class="office-tool-heading">
+              <div class="cat-label cat-label-offer">
+                Tövsiyə edilir
+              </div>
+              <div class="wish-label">
+                <a href="">
+                  <img src="https://los.az/lucky/images/icon/heart-outline.svg" alt="" aria-label="add-to-wishlist">
+                </a>
+              </div>
+            </div>
+            <div class="office-tool-body">
+              <a class = "office-tool-btn" href="">
+<img src="./assets/public/1625820269bdc38bb1842a6c677cae4a6f2a8c5deb.jpg" alt="">
+              </a>
+
+            </div>
+            <div class="office-tool-footer">
+              <p>Qələm "Gigis" 9684</p>
+              <p class="tool-price">0.40 Azn</p>
+              <a class = "office-tool-btn">Səbətə at</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="office-tool-item">
+            <div class="office-tool-heading">
+              <div class="cat-label cat-label-offer">
+                Tövsiyə edilir
+              </div>
+              <div class="wish-label">
+                <a href="">
+                  <img src="https://los.az/lucky/images/icon/heart-outline.svg" alt="" aria-label="add-to-wishlist">
+                </a>
+              </div>
+            </div>
+            <div class="office-tool-body">
+              <a href="">
+                <img src="./assets/public/1636102439dwGqfsr0N4IbHr9RYvefNoUJB5mWNiAQdKCE1aPo.png" alt="">
+              </a>
+
+            </div>
+            <div class="office-tool-footer">
+              <p>Qələm "Gigis" 9684</p>
+              <p class="tool-price">0.40 Azn</p>
+              <a class = "office-tool-btn">Səbətə at</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section office tool -->
 
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> -->
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>

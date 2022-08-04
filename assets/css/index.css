@@ -493,6 +493,7 @@ li {
     /*visibility: hidden;*/
     /*opacity: 0;*/
     display: none;
+    z-index: 999;
 }
 
 .category-body.active {
@@ -679,14 +680,129 @@ li {
     color:#303030;
 }
 
-
-
-
-
-
-
-
-
 /* header bottom */
 
 /* header */
+
+/* swiper */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+/* swiper */
+
+/* section office tool */
+#office-tool {
+    width: 100%;
+    display: flex;
+
+}
+
+.office-tool-item {
+    position: relative;
+    width: 100%;
+    border: 1px solid transparent;
+}
+
+.office-tool-heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.office-tool-body {
+    width: 100%;
+    height: 300px;
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 35px;
+}
+
+.office-tool-body img {
+ object-fit: cover  ;
+ background-size: cover;
+}
+
+.office-tool-footer {
+    width: 100%;
+   text-align: center;
+}
+
+.office-tool-btn {
+    color: #303030;
+    cursor: pointer;
+}
+
+.office-tool-btn:hover {
+    background: #106853;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+.office-tool-footer a {
+    padding: 10px 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.cat-label {
+    padding: 6px 12px;
+    color:#fff;
+    font-size: 12px;
+}
+
+.cat-label-offer {
+    background:#106853;
+    border-radius: 5px;
+}
+/* section office tool */
