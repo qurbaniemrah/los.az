@@ -4,8 +4,6 @@
   display: none;
 }
 
-
-
 .header-info {
   position: relative;
   bottom: 40px;
@@ -16,6 +14,20 @@
   display: flex;
   justify-content: center;
 }
+
+.header-bottom-nav ul {
+  display: none;
+}
+
+/* .header-md-logo,.header-md-search,.header-md-social a, span {
+  display: none;
+} */
+
+.header-md-logo a {
+  display: block;
+}
+
+
 
 
 
