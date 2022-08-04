@@ -1,5 +1,24 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+.search-box input,.search-box span {
+  display: none;
+}
+
+
+
+.header-info {
+  position: relative;
+  bottom: 40px;
+}
+
+.header-logo a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
 
   }
   
