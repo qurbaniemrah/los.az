@@ -76,6 +76,27 @@ var swiper = new Swiper(".mySwiper", {
 });
 // swiper
 
+// owl carousel
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  autoPlay:true,
+  margin:10,
+  nav:true,
+  rewindNav:false,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:5
+      }
+  }
+})
+// owl carousel
+
 
 
 
