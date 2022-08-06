@@ -816,7 +816,7 @@ body {
     background-attachment: fixed;
     background-position: center; */
     overflow: hidden;
-    
+
 }
 
 
@@ -891,7 +891,7 @@ to {left: 30%;}
 
 /* section category 2 */
 #category-general-2 {
-    background-color:#106853;
+    background-color: #106853;
     background-image: url(../public/leaf-header-1.png);
     background-position: top right;
     background-repeat: no-repeat;
@@ -905,6 +905,7 @@ to {left: 30%;}
     display: flex;
     overflow: hidden;
 }
+
 /* section category 2 */
 
 /* section brands */
@@ -912,4 +913,96 @@ to {left: 30%;}
     margin-top: 100px;
     width: 100%;
 }
+
+.owl-nav {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.item {
+    width: 100%;
+    height: 100px;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* section brands */
+
+/* section footer */
+.footer-main-title {
+    color: #fc8410;
+    text-decoration: underline;
+    margin-bottom: .1em;
+    width: 100% ;
+    font-size: 18px;
+    font-weight: bold!important;
+}
+.footer-main-cats,
+.footer-main-menues {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+.footer-main-cats li,
+.footer-main-menues li {
+    margin-top: 3px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-main-cats a,
+.footer-main-menues a,
+.footer-info{
+    color: #000;
+    position: relative;
+    font-weight: 500;
+    font-size: 15px;
+}
+.footer-main-cats a::before,
+.footer-main-menues a::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #fc8410;
+    bottom: 0;
+}
+.footer-main-cats a::before,
+.footer-main-menues a::before{
+    left: 0;
+}
+.footer-main-cats a:hover::before,
+.footer-main-menues a:hover::before
+{
+    width: 100%;
+    transition: all .5s;
+
+}
+.footer-info p {
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.footer-info p span {
+  margin-right: 10px;
+}
+
+.footer-copyright {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footer-copyright a {
+    color:#fc8410;
+}
+
+
+/* section footer */
