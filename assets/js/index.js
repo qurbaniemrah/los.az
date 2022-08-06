@@ -83,6 +83,8 @@ $('.owl-carousel').owlCarousel({
   margin:10,
   nav:true,
   rewindNav:false,
+
+
   responsive:{
       0:{
           items:1
