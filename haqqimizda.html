@@ -58,7 +58,7 @@
               <form id="header-search-form" action="https://los.az/az/search" method="get">
                 <div class="search-box">
                   <input type="text" class="form-control" name="search" id="header-search" placeholder="Axtar">
-                  <span class="search-icon"  style="cursor: pointer"><i
+                  <span class="search-icon" onclick="$('#header-search-form').submit()" style="cursor: pointer"><i
                       class="fa fa-search" aria-hidden="true"></i></span>
                 </div>
               </form>
@@ -85,12 +85,11 @@
       </div>
     </div>
     <!-- header mobile -->
-
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 d-none d-sm-block d-md-none d-lg-none">
           <div class="header-md-logo">
-            <a href="./index.html">
+            <a href="">
               <img src="./assets/public/images/logo/logo-header.svg" alt="logo">
             </a>
           </div>
@@ -98,15 +97,55 @@
 
       </div>
     </div>
-
     <!-- header mobile -->
     <!-- mobile version -->
+    <nav class="navbar navbar-dark" aria-label="First navbar example">
+      <div class="container-fluid">
 
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample01">
+          <ul class="navbar-nav me-auto mb-2">
+            <li class="nav-item">
+              <a class="nav-link"  href="./haqqimizda.html">Haqqımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="./yeni.html">Yeni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="#">Endirimlər</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="#">Ən çox satılanlar</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Şərtlər
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./catdirilma.html">Çatdırılma
+                </a></li>
+                <li><a class="dropdown-item" href="./geriqaytarma.html">Geri qaytarılma və dəyişdirilmə</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="./elaqe.html">Əlaqə</a>
+            </li>
+          </ul>
+          <form role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
     <!-- mobile version -->
     <!-- header middle -->
 
     <!-- header bottom -->
-    <div class="header-bottom">
+    <div class="header-bottom ">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-12">
@@ -437,18 +476,18 @@
               <ul>
                 <li><a href="./haqqimizda.html">Haqqımızda</a></li>
                 <li><a href="./yeni.html">Yeni</a></li>
-                <li><a href="">Endirimlər</a></li>
+                <li><a href="./endirim.html">Endirimlər</a></li>
                 <li><a href="">Ən çox satılanlar</a></li>
                 <li class="nav-item">
                   <a href="">Şərtlər</a>
                   <i class="fa-solid fa-chevron-right"></i>
                   <i class="fa-solid fa-angle-down"></i>
                   <ul class="nav-item-drp">
-                    <li><a href="">Çatdırılma</a></li>
-                    <li><a href="">Geri qaytarılma və dəyişdirilmə</a></li>
+                    <li><a href="./catdirilma.html">Çatdırılma</a></li>
+                    <li><a href="./geriqaytarma.html">Geri qaytarılma və dəyişdirilmə</a></li>
                   </ul>
                 </li>
-                <li><a href="">Əlaqə</a></li>
+                <li><a href="./elaqe.html">Əlaqə</a></li>
               </ul>
             </div>
           </div>

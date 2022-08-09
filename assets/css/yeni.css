@@ -1,0 +1,9 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#footer-general {
+    margin-top: 40px;
+}

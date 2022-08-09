@@ -430,6 +430,10 @@ body {
     margin-top: 50px;
     width: 100%;
     display: flex;
+    background-color: #f8f8f8;
+    background-image: url(../public/leaf-office-left-1.png),url(../public/leaf-category-right-1.png);
+    background-repeat: no-repeat;
+background-position: left 90%,right 90%;
 
 }
 
@@ -756,5 +760,27 @@ to {left: 30%;}
 .social-item a {
     font-size: 15px;
     color: #fff;
+}
+
+.social-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-item {
+    margin: 0 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.page-heading a {
+    color: black;
 }
 /* section footer */

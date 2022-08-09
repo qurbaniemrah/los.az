@@ -1,0 +1,121 @@
+/* contact info */
+#contact-info {
+    padding: 50px 0;
+}
+
+.page-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    height: 135px;
+    margin-bottom: 45px;
+    background: url(../images/pattern/leaf-title.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 3px 8px rgb(0 0 0 / 10%);
+    height: 140px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.contact-box img {
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.contact-box.box-border {
+    border-left: 1px solid var(--page-info-color);
+    border-right: 1px solid var(--page-info-color);
+}
+
+.contact-box img {
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 3px 8px rgb(0 0 0 / 10%);
+    height: 140px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.contact-box img {
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.map-responsive {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form h2 {
+    font-size: var(--font-size-box-md);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.contact-form form {
+    margin: 0;
+}
+
+.contact-form input {
+    margin-bottom: 25px;
+    resize: none;
+}
+
+.form-floating {
+    position: relative;
+}
+
+.form-floating>.form-control, .form-floating>.form-select {
+    height: calc(3.5rem + 2px);
+    padding: 1rem 0.75rem;
+}
+
+.form-floating>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 1rem 0.75rem;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity .1s ease-in-out,transform .1s ease-in-out;
+}
+
+.contact-form .btn-send {
+    width: 100%;
+    height: 50px;
+    margin: 8px 0 0;
+    background-color: #106853;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+.contact-box-wrapper {
+    margin-bottom: 40px;
+}
+/* contact info */
