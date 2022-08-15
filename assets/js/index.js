@@ -107,7 +107,7 @@ $(".owl-carousel").owlCarousel({
   autoplayTimeout: 5000,
   autoplaySpeed: 1000,
   responsiveClass: true,
-  
+
   responsive: {
     0: {
       items: 1
@@ -125,14 +125,74 @@ $(".owl-carousel").owlCarousel({
 // owl carousel
 
 // counting wishlist
-// const wishLabel = document.querySelectorAll('.wish-label');
-// const wishCount = document.querySelector('.wishCount');
+const wishLabel = document.querySelectorAll('.wish-label');
+const wishCount = document.querySelector('.wishCount');
+const card = document.querySelector('.office-tool-item');
+const emptyCard = document.querySelector('.empty-card')
+const heartFilled = document.querySelector('.heart-filled');
+const heartSimple = document.querySelector('.heart-simple')
+let zero = 0
+
+console.log(wishLabel)
 
 
 
 
-// for(let i =0; i<wishLabel.length; i++) {
-//   wishLabel[i].addEventListener('click', ()=> {
-//     wishCount.innerHTML += 1
-//     })
-//   }
+function add() {
+  wishCount.innerHTML = zero + 1
+  zero += 1
+  
+}
+
+function remove() {
+  wishCount.innerHTML = zero - 1
+  zero -= 1
+}
+
+for (let i = 0; i < wishLabel.length; i++) {
+  wishLabel[i].addEventListener('click', () => {
+    if (zero == 0) {
+      add()
+    }
+     else {
+      remove()
+    }
+
+
+  });
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// counting wishlist
+
+// card section
+
+
+// card section

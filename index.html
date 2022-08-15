@@ -56,7 +56,7 @@
               <form id="header-search-form" action="https://los.az/az/search" method="get">
                 <div class="search-box">
                   <input type="text" class="form-control" name="search" id="header-search" placeholder="Axtar">
-                  <span class="search-icon" onclick="$('#header-search-form').submit()" style="cursor: pointer"><i
+                  <span class="search-icon"  style="cursor: pointer"><i
                       class="fa fa-search" aria-hidden="true"></i></span>
                 </div>
               </form>
@@ -66,12 +66,12 @@
             <div class="header-md-social">
               <ul class="header-info">
                 <li class="shopping-cart">
-                  <a class="my-cart-icon" href="https://los.az/az/sebet"><img
-                      src="https://los.az/lucky/images/general/cart.svg" alt="shopping cart"></a>
+                  <a class="my-cart-icon" href=""><img src="https://los.az/lucky/images/general/cart.svg"
+                      alt="shopping cart"></a>
                   <span class="basket-count sum qtyCount">0</span>
                 </li>
                 <li class="whish-list">
-                  <a class="my-cart-icon" href="https://los.az/az/istek-siyahisi">
+                  <a class="my-cart-icon" href="./wishlist.html">
                     <img src="https://los.az/lucky/images/general/heart.svg" alt="wish-list">
                   </a>
                   <span class="basket-count sum wishCount">0</span>
@@ -109,28 +109,28 @@
         <div class="navbar-collapse collapse" id="navbarsExample01">
           <ul class="navbar-nav me-auto mb-2">
             <li class="nav-item">
-              <a class="nav-link"  href="./haqqimizda.html">Haqqımızda</a>
+              <a class="nav-link" href="./haqqimizda.html">Haqqımızda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="./yeni.html">Yeni</a>
+              <a class="nav-link" href="./yeni.html">Yeni</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="#">Endirimlər</a>
+              <a class="nav-link" href="#">Endirimlər</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="#">Ən çox satılanlar</a>
+              <a class="nav-link" href="#">Ən çox satılanlar</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Şərtlər
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="./catdirilma.html">Çatdırılma
-                </a></li>
+                  </a></li>
                 <li><a class="dropdown-item" href="./geriqaytarma.html">Geri qaytarılma və dəyişdirilmə</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link"  href="./elaqe.html">Əlaqə</a>
+              <a class="nav-link" href="./elaqe.html">Əlaqə</a>
             </li>
           </ul>
           <form role="search">
@@ -475,7 +475,7 @@
                 <li><a href="./haqqimizda.html">Haqqımızda</a></li>
                 <li><a href="./yeni.html">Yeni</a></li>
                 <li><a href="./endirim.html">Endirimlər</a></li>
-                <li><a href="">Ən çox satılanlar</a></li>
+                <li><a href="./coxsatilan.html">Ən çox satılanlar</a></li>
                 <li class="nav-item">
                   <a href="">Şərtlər</a>
                   <i class="fa-solid fa-chevron-right"></i>
@@ -540,9 +540,10 @@
               <div class="cat-label cat-label-offer">
                 Tövsiyə edilir
               </div>
-              <div class="wish-label">
+              <div>
                 <a class="wish-label" href="#">
-                  <img src="https://los.az/lucky/images/icon/heart-outline.svg" alt="" aria-label="add-to-wishlist">
+                  <img class="heart-simple" src="https://los.az/lucky/images/icon/heart-outline.svg" alt="" aria-label="add-to-wishlist">
+                  <img class="heart-filled" src="./assets/public/yeni/heart-filled.svg" alt="">
                 </a>
               </div>
             </div>
@@ -565,7 +566,7 @@
               <div class="cat-label cat-label-offer">
                 Tövsiyə edilir
               </div>
-              <div class="wish-label">
+              <div >
                 <a class="wish-label" href="#">
                   <img src="https://los.az/lucky/images/icon/heart-outline.svg" alt="" aria-label="add-to-wishlist">
                 </a>
@@ -590,7 +591,7 @@
               <div class="cat-label cat-label-offer">
                 Tövsiyə edilir
               </div>
-              <div class="wish-label">
+              <div >
                 <a class="wish-label" href="#">
                   <img src="https://los.az/lucky/images/icon/heart-outline.svg" alt="" aria-label="add-to-wishlist">
                 </a>
@@ -615,7 +616,7 @@
               <div class="cat-label cat-label-offer">
                 Tövsiyə edilir
               </div>
-              <div class="wish-label">
+              <div >
                 <a class="wish-label" href="#">
                   <img src="https://los.az/lucky/images/icon/heart-outline.svg" alt="" aria-label="add-to-wishlist">
                 </a>
@@ -638,6 +639,12 @@
     </div>
   </section>
   <!-- section office tool -->
+
+  <!-- section bosluq -->
+  <div class="empty-card">
+
+  </div>
+  <!-- section bosluq -->
 
   <!-- section category -->
   <section id="category">
@@ -725,8 +732,8 @@
           <div class="office-tool-item">
             <div class="office-tool-heading">
 
-              <div class="wish-label">
-                <a href="">
+              <div >
+                <a class="wish-label" href="#">
                   <img src="https://los.az/lucky/images/icon/heart-outline.svg" alt="" aria-label="add-to-wishlist">
                 </a>
               </div>
@@ -748,9 +755,9 @@
           <div class="office-tool-item">
             <div class="office-tool-heading">
 
-              <div class="wish-label">
-                <a href="">
-                  <img src="https://los.az/lucky/images/icon/heart-outline.svg" alt="" aria-label="add-to-wishlist">
+              <div >
+                <a class="wish-label" href="#">
+                  <img src="https://los.az/lucky/images/icon/heart-outline.svg">
                 </a>
               </div>
             </div>
@@ -771,9 +778,9 @@
           <div class="office-tool-item">
             <div class="office-tool-heading">
 
-              <div class="wish-label">
-                <a href="">
-                  <img src="https://los.az/lucky/images/icon/heart-outline.svg" alt="" aria-label="add-to-wishlist">
+              <div >
+                <a class="wish-label" href="#">
+                  <img src="https://los.az/lucky/images/icon/heart-outline.svg">
                 </a>
               </div>
             </div>
@@ -794,9 +801,9 @@
           <div class="office-tool-item">
             <div class="office-tool-heading">
 
-              <div class="wish-label">
-                <a href="">
-                  <img src="https://los.az/lucky/images/icon/heart-outline.svg" alt="" aria-label="add-to-wishlist">
+              <div >
+                <a class="wish-label" href="#">
+                  <img src="https://los.az/lucky/images/icon/heart-outline.svg" >
                 </a>
               </div>
             </div>
@@ -1006,8 +1013,8 @@
         <div class=" col-lg-3 col-md-12 col-sm-12 d-flex align-items-center justify-content-between footer-center">
           <ul class="footer-main-menues">
             <p class="footer-main-title">Menyular</p>
-            <li><a href="">Haqqımızda</a></li>
-            <li><a href="">Çatdırılma</a></li>
+            <li><a href="./haqqimizda.html">Haqqımızda</a></li>
+            <li><a href="./catdirilma.html">Çatdırılma</a></li>
             <li><a href="">Geri qaytarılma və
                 dəyişdirmə</a></li>
             <li><a href="">Əlaqə </a></li>
