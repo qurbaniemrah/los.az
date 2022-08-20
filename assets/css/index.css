@@ -152,7 +152,7 @@ li {
 .category {
     height: 65px;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
     background: #106853;
     position: relative;
@@ -436,9 +436,9 @@ body {
     width: 100%;
     display: flex;
     background-color: #f8f8f8;
-    background-image: url(../public/leaf-office-left-1.png),url(../public/leaf-category-right-1.png);
+    background-image: url(../public/leaf-office-left-1.png), url(../public/leaf-category-right-1.png);
     background-repeat: no-repeat;
-background-position: left 90%,right 90%;
+    background-position: left 90%, right 90%;
 
 }
 
@@ -449,7 +449,7 @@ background-position: left 90%,right 90%;
 }
 
 .office-tool-item {
- 
+
     width: 100%;
     border: 1px solid transparent;
     background: #fff;
@@ -482,13 +482,13 @@ background-position: left 90%,right 90%;
     justify-content: center;
     overflow: hidden;
     margin-top: 35px;
-    
+
 }
 
 .office-tool-body img {
     max-width: 100%;
     max-height: 100%;
-    width: auto!important;
+    width: auto !important;
     object-fit: cover;
     background-size: cover;
     transform: scale(1.1);
@@ -527,7 +527,7 @@ background-position: left 90%,right 90%;
     border-radius: 5px;
 }
 
-.heart-filled {
+.wish-label-deactive {
     display: none;
 }
 
@@ -558,7 +558,7 @@ background-position: left 90%,right 90%;
     height: 100%;
     border: 1px solid transparent;
     overflow: hidden;
-  
+
 }
 
 
@@ -619,19 +619,19 @@ to {left: 30%;}
 }
 
 .category-item:hover .banner {
-    background-color:#000;
+    background-color: #000;
     opacity: 0.5;
     z-index: 2;
 
-    
-    
-    
+
+
+
 }
 
 .category-item:hover h3 {
     font-weight: bold;
     color: #fff;
-   
+
 }
 
 
@@ -695,10 +695,11 @@ to {left: 30%;}
     color: #fc8410;
     text-decoration: underline;
     margin-bottom: .1em;
-    width: 100% ;
+    width: 100%;
     font-size: 18px;
-    font-weight: bold!important;
+    font-weight: bold !important;
 }
+
 .footer-main-cats,
 .footer-main-menues {
     display: flex;
@@ -706,6 +707,7 @@ to {left: 30%;}
     align-items: flex-start;
     height: 100%;
 }
+
 .footer-main-cats li,
 .footer-main-menues li {
     margin-top: 3px;
@@ -715,12 +717,13 @@ to {left: 30%;}
 
 .footer-main-cats a,
 .footer-main-menues a,
-.footer-info{
+.footer-info {
     color: #000;
     position: relative;
     font-weight: 500;
     font-size: 15px;
 }
+
 .footer-main-cats a::before,
 .footer-main-menues a::before {
     content: '';
@@ -731,42 +734,44 @@ to {left: 30%;}
     background-color: #fc8410;
     bottom: 0;
 }
+
 .footer-main-cats a::before,
-.footer-main-menues a::before{
+.footer-main-menues a::before {
     left: 0;
 }
+
 .footer-main-cats a:hover::before,
-.footer-main-menues a:hover::before
-{
+.footer-main-menues a:hover::before {
     width: 100%;
     transition: all .5s;
 
 }
+
 .footer-info p {
-  margin: 5px 0;
-  font-weight: 500;
+    margin: 5px 0;
+    font-weight: 500;
 }
 
 .footer-info p span {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .footer-copyright {
-  margin-bottom: 0;
-  font-size: 18px;
-  font-weight: 500;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .footer-copyright a {
-    color:#fc8410;
+    color: #fc8410;
 }
 
 .social-item {
-    background-color:#106853;
+    background-color: #106853;
     border-radius: 50%;
-   padding: 5px;
+    padding: 5px;
     margin-left: 15px;
-  
+
 }
 
 .social-item a {
@@ -795,4 +800,5 @@ to {left: 30%;}
 .page-heading a {
     color: black;
 }
+
 /* section footer */

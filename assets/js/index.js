@@ -15,7 +15,10 @@ $(document).ready(function () {
       $(".category-body").stop(true, false, true).hide();
     });
     $(".category-list-item").hover(function () {
-      $(this).next(".category-list-dropdown").stop(true, false, true).toggleClass("active");
+      $(this)
+        .next(".category-list-dropdown")
+        .stop(true, false, true)
+        .toggleClass("active");
     });
     $(".user-data").hover(function () {
       $(".user-list-container").stop(true, false, true).slideToggle(200);
@@ -25,14 +28,19 @@ $(document).ready(function () {
     });
     $(".mobile-category-heading").click(function () {
       $(".mobile-category-body").stop(true, false, true).toggleClass("active");
-      $(".mobile-category-head").stop(true, false, true).toggleClass("bordered");
+      $(".mobile-category-head")
+        .stop(true, false, true)
+        .toggleClass("bordered");
     });
     $(".category-item-arrow").click(function () {
       $(this).stop(true, false, true).toggleClass("rotate");
       $(this).parent().stop(true, false, true).toggleClass("active");
     });
     $(".nav-item-container").hover(function () {
-      $(this).find(".nav-dropdown").stop(true, false, true).toggleClass("active");
+      $(this)
+        .find(".nav-dropdown")
+        .stop(true, false, true)
+        .toggleClass("active");
       if ($(this).find(".nav-dropdown").hasClass("active")) {
         $(".nav-item-arrow").addClass("rotate");
       } else {
@@ -83,8 +91,6 @@ var swiper = new Swiper(".mySwiper", {
 // nav:true,
 // rewindNav:false,
 
-
-
 //   responsive:{
 //       0:{
 //           items:1
@@ -110,89 +116,68 @@ $(".owl-carousel").owlCarousel({
 
   responsive: {
     0: {
-      items: 1
+      items: 1,
     },
     600: {
-      items: 3
+      items: 3,
     },
     1200: {
-      items: 5
-    }
-  }
-
+      items: 5,
+    },
+  },
 });
 
 // owl carousel
 
 // counting wishlist
-const wishLabel = document.querySelectorAll('.wish-label');
-const wishCount = document.querySelector('.wishCount');
-const card = document.querySelector('.office-tool-item');
-const emptyCard = document.querySelector('.empty-card')
-const heartFilled = document.querySelector('.heart-filled');
-const heartSimple = document.querySelector('.heart-simple')
-let zero = 0
-
-console.log(wishLabel)
-
-
-
+const wishLabelActive = document.querySelectorAll(".wish-label");
+const wishLabelDeactive = document.querySelectorAll(".wish-label-deactive");
+const wishCount = document.querySelector(".wishCount");
+const card = document.querySelector(".office-tool-item");
+const emptyCard = document.querySelector(".empty-card");
+let zero = 0;
 
 function add() {
-  wishCount.innerHTML = zero + 1
-  zero += 1
-  
+  wishCount.innerHTML = zero + 1;
+  zero += 1;
 }
 
 function remove() {
-  wishCount.innerHTML = zero - 1
-  zero -= 1
+  wishCount.innerHTML = zero - 1;
+  zero -= 1;
+  if (zero == -1) {
+    zero + 1;
+  }
 }
 
-for (let i = 0; i < wishLabel.length; i++) {
-  wishLabel[i].addEventListener('click', () => {
-    if (zero == 0) {
-      add()
-    }
-     else {
-      remove()
-    }
-
-
+for (let i = 0; i < wishLabelActive.length; i++) {
+  wishLabelActive[i].addEventListener("click", () => {
+    add();
+    wishLabelDeactive.forEach(deactive => {
+    deactive.style.display = 'block'
   });
-
+  wishLabelActive.forEach(active => {
+    active.style.display ='none'
+  })
+  });
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+for (let j = 0; j < wishLabelDeactive.length; j++) {
+  wishLabelDeactive[j].addEventListener("click", () => {
+    remove();
+    wishLabelDeactive.forEach(deactive => {
+      deactive.style.display = 'none'
+    });
+    wishLabelActive.forEach(active => {
+      active.style.display ='block'
+    })
+  });
+}
 
 
 
 // counting wishlist
 
 // card section
-
 
 // card section
