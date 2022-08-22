@@ -133,13 +133,17 @@ $(".owl-carousel").owlCarousel({
 const wishLabelActive = document.querySelectorAll(".wish-label");
 const wishLabelDeactive = document.querySelectorAll(".wish-label-deactive");
 const wishCount = document.querySelector(".wishCount");
-const card = document.querySelector(".office-tool-item");
 const emptyCard = document.querySelector(".empty-card");
+const card = document.querySelector(".office-tool-item");
+const addtoCard = document.querySelectorAll(".office-tool-btn");
+const addBasket = document.querySelector(".qtyCount");
+const data = {}
 let zero = 0;
 
 function add() {
   wishCount.innerHTML = zero + 1;
   zero += 1;
+  emptyCard.appendChild(card)
 }
 
 function remove() {
@@ -148,33 +152,24 @@ function remove() {
   if (zero == -1) {
     zero + 1;
   }
+  emptyCard.removeChild(card);
 }
 
 for (let i = 0; i < wishLabelActive.length; i++) {
   wishLabelActive[i].addEventListener("click", () => {
     add();
-    wishLabelDeactive.forEach(deactive => {
-    deactive.style.display = 'block'
-  });
-  wishLabelActive.forEach(active => {
-    active.style.display ='none'
-  })
+    wishLabelDeactive[i].style.display = "block";
+    wishLabelActive[i].style.display = "none";
   });
 }
 
 for (let j = 0; j < wishLabelDeactive.length; j++) {
   wishLabelDeactive[j].addEventListener("click", () => {
     remove();
-    wishLabelDeactive.forEach(deactive => {
-      deactive.style.display = 'none'
-    });
-    wishLabelActive.forEach(active => {
-      active.style.display ='block'
-    })
+    wishLabelDeactive[j].style.display = "none";
+    wishLabelActive[j].style.display = "block";
   });
 }
-
-
 
 // counting wishlist
 
