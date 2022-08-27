@@ -1,7 +1,7 @@
-/* .empty-card {
+.empty-card {
     width: 100%;
     height: 100%;
-} */
+}
 
 
 /* header */
@@ -429,6 +429,11 @@ body {
 }
 
 /* swiper */
+
+.cartBox {
+    width: 100%;
+    height: 100%;
+}
 
 /* section office tool */
 #office-tool {

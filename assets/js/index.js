@@ -84,26 +84,6 @@ var swiper = new Swiper(".mySwiper", {
 });
 // swiper
 
-// owl carousel
-// $('.owl-carousel').owlCarousel({
-// loop:true,
-// margin:10,
-// nav:true,
-// rewindNav:false,
-
-//   responsive:{
-//       0:{
-//           items:1
-//       },
-//       600:{
-//           items:3
-//       },
-//       1000:{
-//           items:5
-//       }
-//   }
-// })
-
 $(".owl-carousel").owlCarousel({
   items: 1,
   loop: true,
@@ -130,49 +110,104 @@ $(".owl-carousel").owlCarousel({
 // owl carousel
 
 // counting wishlist
-const wishLabelActive = document.querySelectorAll(".wish-label");
-const wishLabelDeactive = document.querySelectorAll(".wish-label-deactive");
-const wishCount = document.querySelector(".wishCount");
-const emptyCard = document.querySelector(".empty-card");
-const card = document.querySelector(".office-tool-item");
-const addtoCard = document.querySelectorAll(".office-tool-btn");
-const addBasket = document.querySelector(".qtyCount");
-const data = {}
-let zero = 0;
+// const wishLabelActive = document.querySelectorAll(".wish-label");
+// const wishLabelDeactive = document.querySelectorAll(".wish-label-deactive");
+// const wishCount = document.querySelector(".wishCount");
+// const emptyCard = document.querySelector(".empty-card");
+// let zero = 0;
 
-function add() {
-  wishCount.innerHTML = zero + 1;
-  zero += 1;
-  emptyCard.appendChild(card)
-}
+// function add() {
+//   wishCount.innerHTML = zero + 1;
+//   zero += 1;
+// }
 
-function remove() {
-  wishCount.innerHTML = zero - 1;
-  zero -= 1;
-  if (zero == -1) {
-    zero + 1;
-  }
-  emptyCard.removeChild(card);
-}
+// function remove() {
+//   wishCount.innerHTML = zero - 1;
+//   zero -= 1;
+//   if (zero == -1) {
+//     zero + 1;
+//   }
+// }
 
-for (let i = 0; i < wishLabelActive.length; i++) {
-  wishLabelActive[i].addEventListener("click", () => {
-    add();
-    wishLabelDeactive[i].style.display = "block";
-    wishLabelActive[i].style.display = "none";
-  });
-}
+// for (let i = 0; i < wishLabelActive.length; i++) {
+//   wishLabelActive[i].addEventListener("click", (e) => {
+//     add();
+//     wishLabelDeactive[i].style.display = "block";
+//     wishLabelActive[i].style.display = "none";
+//   });
+// }
 
-for (let j = 0; j < wishLabelDeactive.length; j++) {
-  wishLabelDeactive[j].addEventListener("click", () => {
-    remove();
-    wishLabelDeactive[j].style.display = "none";
-    wishLabelActive[j].style.display = "block";
-  });
-}
+// for (let j = 0; j < wishLabelDeactive.length; j++) {
+//   wishLabelDeactive[j].addEventListener("click", () => {
+//     remove();
+//     wishLabelDeactive[j].style.display = "none";
+//     wishLabelActive[j].style.display = "block";
+//   });
+// }
 
 // counting wishlist
 
-// card section
+// addToCart
 
-// card section
+//cart box
+const iconShopping = document.querySelector(".iconShopping");
+const cartCloseBtn = document.querySelector(".fa-close");
+
+// iconShopping.addEventListener("click",function(){
+//   cartBox.classList.add('active');
+// });
+// cartCloseBtn.addEventListener("click",function(){
+//   cartBox.classList.remove('active');
+// });
+
+// adding data to local storage
+const addToCartBtn = document.getElementsByClassName("office-tool-btn");
+let items = [];
+for (let c = 0; c < addToCartBtn.length; c++) {
+  addToCartBtn[c].addEventListener("click", (e) => {
+    e.preventDefault()
+    if (typeof (Storage !== "undefined")) {
+      let item = {
+        id: c + 1,
+        name: e.target.parentElement.children[0].textContent,
+        price: e.target.parentElement.children[1].textContent,
+        no: 1,
+      };
+
+      if (JSON.parse(localStorage.getItem("items")) === null) {
+        items.push(item);
+        localStorage.setItem("items", JSON.stringify(items));
+        window.location.reload();
+        console.log(item);
+      } else {
+        const localItems = JSON.parse(localStorage.getItem("items"));
+        localItems.map((data) => {
+          if (item.id == data.id) {
+            item.no == data.no + 1;
+          } else {
+            items.push(data);
+          }
+        });
+        items.push(item);
+        localStorage.setItem("items", JSON.stringify(items));
+        window.location.reload();
+      }
+    } else {
+      alert("storage is not working your browser");
+    }
+  });
+  // adding data to localstorage
+
+  // adding data to shopping cart
+  const iconShoppingP = document.querySelector(".basket-count");
+  let no = 0;
+
+  JSON.parse(localStorage.getItem("items")).map((data) => {
+    no = no + data.no;
+  });
+  iconShoppingP.innerHTML = no;
+
+  // adding cartBox data in table
+}
+
+// addToCart
