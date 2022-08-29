@@ -1,4 +1,7 @@
 // Menu and Category
+
+
+
 $(document).ready(function () {
   $(function () {
     if ($("body").hasClass("body-catalog")) {
@@ -114,6 +117,7 @@ $(".owl-carousel").owlCarousel({
 // const wishLabelDeactive = document.querySelectorAll(".wish-label-deactive");
 // const wishCount = document.querySelector(".wishCount");
 // const emptyCard = document.querySelector(".empty-card");
+// let items = []
 // let zero = 0;
 
 // function add() {
@@ -134,6 +138,7 @@ $(".owl-carousel").owlCarousel({
 //     add();
 //     wishLabelDeactive[i].style.display = "block";
 //     wishLabelActive[i].style.display = "none";
+
 //   });
 // }
 
@@ -147,67 +152,75 @@ $(".owl-carousel").owlCarousel({
 
 // counting wishlist
 
-// addToCart
+// add to cart
+const carts = document.querySelectorAll(".office-tool-item");
+const addCartBtn = document.getElementsByClassName("office-tool-btn");
+const emptyCard = document.querySelector(".empty-card");
 
-//cart box
-const iconShopping = document.querySelector(".iconShopping");
-const cartCloseBtn = document.querySelector(".fa-close");
 
-// iconShopping.addEventListener("click",function(){
-//   cartBox.classList.add('active');
-// });
-// cartCloseBtn.addEventListener("click",function(){
-//   cartBox.classList.remove('active');
-// });
-
-// adding data to local storage
-const addToCartBtn = document.getElementsByClassName("office-tool-btn");
-let items = [];
-for (let c = 0; c < addToCartBtn.length; c++) {
-  addToCartBtn[c].addEventListener("click", (e) => {
-    e.preventDefault()
-    if (typeof (Storage !== "undefined")) {
-      let item = {
-        id: c + 1,
-        name: e.target.parentElement.children[0].textContent,
-        price: e.target.parentElement.children[1].textContent,
-        no: 1,
-      };
-
-      if (JSON.parse(localStorage.getItem("items")) === null) {
-        items.push(item);
-        localStorage.setItem("items", JSON.stringify(items));
-        window.location.reload();
-        console.log(item);
-      } else {
-        const localItems = JSON.parse(localStorage.getItem("items"));
-        localItems.map((data) => {
-          if (item.id == data.id) {
-            item.no == data.no + 1;
-          } else {
-            items.push(data);
-          }
-        });
-        items.push(item);
-        localStorage.setItem("items", JSON.stringify(items));
-        window.location.reload();
-      }
-    } else {
-      alert("storage is not working your browser");
-    }
-  });
-  // adding data to localstorage
-
-  // adding data to shopping cart
-  const iconShoppingP = document.querySelector(".basket-count");
-  let no = 0;
-
-  JSON.parse(localStorage.getItem("items")).map((data) => {
-    no = no + data.no;
-  });
-  iconShoppingP.innerHTML = no;
-
-  // adding cartBox data in table
+class Shopping {
+  constructor(image, title, price) {
+    this.image = image;
+    this.title = title;
+    this.price = price;
+  }
 }
 
-// addToCart
+
+
+class UI {}
+console.log(carts);
+for (let i = 0; i < carts.length; i++) {
+  addCartBtn[i].addEventListener("click", (e) => {
+    let image = carts[i].getElementsByClassName("tool-image")[0].src;
+    let title = carts[i].getElementsByClassName("tool-title")[0].textContent;
+    let price = carts[i].getElementsByClassName("tool-price")[0].textContent;
+    let shopping = new Shopping(image, title, price);
+
+    
+  
+    localStorage.setItem('shopping', JSON.stringify(shopping));
+    var data = localStorage.getItem('shopping');
+
+    console.log(localStorage.length)
+    
+
+    localStorage.setItem('emptycard', JSON.stringify(emptyCard))
+    localStorage.getItem('emptycard');
+    
+    // window.location.reload();
+    emptyCard.innerHTML += `<div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="office-tool-item">
+      <div class="office-tool-heading">
+        <div class="cat-label cat-label-offer">Tövsiyə edilir</div>
+        <div>
+          <a class="wish-label" href="#">
+            <img class="heart-simple" src="https://los.az/lucky/images/icon/heart-outline.svg" alt=""
+              aria-label="add-to-wishlist" />
+          </a>
+          <a class="wish-label-deactive" href="#">
+            <img class="heart-filled" src="./assets/public/yeni/heart-filled.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="office-tool-body">
+        <a href="">
+          <img class="tool-image" src="${shopping.image}" alt="" />
+        </a>
+      </div>
+      <div class="office-tool-footer">
+        <p class="tool-title">${shopping.title}</p>
+        <p class="tool-price">${shopping.price}</p>
+        <a class="office-tool-btn">Səbətə at</a>
+      </div>
+    </div>
+    </div>`;
+   
+    e.preventDefault();
+  });
+}
+
+var basketcount = localStorage.length;
+$('.basket-count').text(basketcount);
+
+// add to cart

@@ -1,6 +1,7 @@
 .empty-card {
     width: 100%;
     height: 100%;
+    display: flex;
 }
 
 
@@ -23,6 +24,15 @@
 
 .header-social .right {
     display: flex;
+}
+
+.button-group {
+    margin-top: 10px;
+
+}
+
+.btn-signin {
+    margin-right: 10px;
 }
 
 
